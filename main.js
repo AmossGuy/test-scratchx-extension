@@ -8,7 +8,7 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.my_first_block = function(root, n) {
+    ext.root = function(root, n) {
         return Math.pow(n, 1/root);
     };
 
