@@ -11,12 +11,17 @@
     ext.root = function(root, n) {
         return Math.pow(n, 1/root);
     };
+    
+    ext.power = function(n, power) {
+        return Math.pow(n, power);
+    }
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
             ['r', 'the %n th root of %n', 'root', 3, 8],
+            ['r', '%n ^ %n', 'power', 3, 2]
         ]
     };
 
