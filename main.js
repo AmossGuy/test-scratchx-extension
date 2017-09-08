@@ -15,13 +15,31 @@
     ext.power = function(n, power) {
         return Math.pow(n, power);
     }
+    
+    var counter = 0;
+    
+    ext.getcount = function() {
+        return counter;
+    }
+    
+    ext.resetcount = function() {
+        counter = 0;
+    }
+    
+    ext.incrcount = function() {
+        counter += 1;
+    }
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'the %nth root of %n', 'root', 3, 8],
-            ['r', '%n ^ %n', 'power', 3, 2]
+            ['r', 'the %n th root of %n', 'root', 3, 8],
+            ['r', '%n ^ %n', 'power', 3, 2],
+            ['-'],
+            ['r', 'counter', 'getcount'],
+            [' ', 'reset counter', 'resetcount'],
+            [' ', 'increment counter', 'incrcount']
         ]
     };
 
