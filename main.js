@@ -45,7 +45,8 @@
             [' ', 'reset counter', 'resetcount'],
             [' ', 'increment counter', 'inccount'],
             [' ', 'decrement counter', 'deccount']
-        ]
+        ],
+        url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     };
 
     // Register the extension
