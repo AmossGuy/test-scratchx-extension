@@ -26,8 +26,12 @@
         counter = 0;
     }
     
-    ext.incrcount = function() {
+    ext.inccount = function() {
         counter += 1;
+    }
+    
+    ext.deccount = function() {
+        counter -= 1;
     }
 
     // Block and block menu descriptions
@@ -39,7 +43,8 @@
             ['-'],
             ['r', 'counter', 'getcount'],
             [' ', 'reset counter', 'resetcount'],
-            [' ', 'increment counter', 'incrcount']
+            [' ', 'increment counter', 'inccount'],
+            [' ', 'decrement counter', 'deccount']
         ]
     };
 
