@@ -20,7 +20,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'the %n th root of %n', 'root', 3, 8],
+            ['r', 'the %nth root of %n', 'root', 3, 8],
             ['r', '%n ^ %n', 'power', 3, 2]
         ]
     };
